@@ -64,3 +64,15 @@ print_r(array_reverse($arr));
 
 // merge
 print_r(array_merge(["first_array"],["second_array"]));
+
+
+// date&time
+echo date("Y:m:d H:i:s");
+
+echo time();
+
+print_r(getdate()); 
+
+echo strftime("%A, %B %d, %Y", strtotime("2023-06-19"));
+
+echo "Current Date and Time: " .  date("l, F j, Y - g:i:s A");
