@@ -33,3 +33,34 @@ echo sqrt(64);
 
 // random number
 echo "\n".rand(1,100);
+
+
+// array functions
+$arr = ["one","two","three"];
+
+echo "\n".count($arr);
+
+echo "\n".array_push($arr, "four");
+print_r($arr);
+
+// pop
+echo "\n".array_pop($arr);
+print_r($arr);
+
+// slice
+$slicedArr = array_slice($arr, 1, 2);
+echo "\nSliced array:";
+print_r($slicedArr);
+
+// splice
+$splicedArr = array_splice($arr, 1, 1, ["new_value"]);
+echo "\nSpliced array:";
+print_r($arr);
+echo "\nRemoved values:";
+print_r($splicedArr);
+
+// reverse
+print_r(array_reverse($arr));
+
+// merge
+print_r(array_merge(["first_array"],["second_array"]));
