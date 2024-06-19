@@ -40,3 +40,8 @@ $bool = false;
 
 $array = [];
 $object = null;
+
+
+// defining const
+define("PI", 3.142);
+echo PI;
