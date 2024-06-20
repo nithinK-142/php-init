@@ -62,3 +62,31 @@ INSERT INTO comments (username, comment_text, users_id) VALUES
 ("Homelander", "Just did a flyby over New York. The view is always spectacular.", 2),
 ("Homelander", "Remember, citizens: I can do whatever I want.", 2);
 ```
+
+### select
+1. Retrieve all users:
+```sql
+SELECT * FROM users;
+```
+
+2. Get the total number of users:
+```sql
+SELECT COUNT(*) AS total_users FROM users;
+```
+
+3. Find the most recent user:
+```sql
+SELECT * FROM users ORDER BY created_at DESC;
+```
+
+4. Get all comments containing the word "SQL":
+```sql
+SELECT username, comment_text
+FROM comments
+WHERE comment_text LIKE '%Just%';
+```
+
+5. Retrieve comments of particular users:
+```sql
+SELECT comment_text FROM comments WHERE users_id=2;
+```
