@@ -15,8 +15,9 @@
             margin: 0;
         }
         form {
-            background-color: white;
+            background-color: black;
             padding: 20px;
+            margin-inline: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
@@ -53,7 +54,22 @@
         <input type="text" name="username" placeholder="Username">
         <input type="password" name="pwd" placeholder="Password">
         <input type="email" name="email" placeholder="E-Mail">
-        <button>Signup</button>
+        <button>submit</button>
+    </form>
+    
+    <form action="includes/updatehandler.inc.php" method="post">
+        <h3>Update Details</h3>
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="pwd" placeholder="Password">
+        <input type="email" name="email" placeholder="E-Mail">
+        <button>submit</button>
+    </form>
+    
+    <form action="includes/deletehandler.inc.php" method="post">
+        <h3>Delete User</h3>
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="pwd" placeholder="Password">
+        <button>submit</button>
     </form>
 </body>
 </html>
